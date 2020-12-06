@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name"><b>Stocks</b></string>
+    <string name="footer_view">Powered by <a style="text-decoration:none" href="https://www.tiingo.com/"><i>tiingo</i></a></string>
+</resources>

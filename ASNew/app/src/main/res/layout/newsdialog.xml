@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_dialog"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button_chrome"
+        app:layout_constraintEnd_toEndOf="@+id/button_twitter"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/button_twitter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title_dialog"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/imageView_dialog"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_dialog" />
+
+    <ImageButton
+        android:id="@+id/button_twitter"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_chrome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_dialog"
+        app:srcCompat="@drawable/ic_twitter_logo"
+        android:background="@drawable/rounded_corner_white"
+        android:layout_marginRight="1dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/button_chrome"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/button_twitter"
+        app:layout_constraintTop_toBottomOf="@+id/title_dialog"
+        android:background="@drawable/rounded_corner_white"
+        app:srcCompat="@drawable/ic_chrome"
+        android:layout_marginLeft="8dp"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
